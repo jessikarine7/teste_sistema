@@ -1,0 +1,240 @@
+
+@font-face {
+    font-family: 'poppins-L';
+    src: local('Poppins-Light'), url(./fonts/Poppins-Light.ttf) format('truetype');
+  }
+  
+  @font-face {
+    font-family: 'poppins-R';
+    src: local('Poppins-Regular'), url(./fonts/Poppins-Regular.ttf) format('truetype');
+  }
+  
+  @font-face {
+    font-family: 'poppins-SB';
+    src: local('Poppins-SemiBold'), url(./fonts/Poppins-SemiBold.ttf) format('truetype');
+  }
+  
+  @font-face {
+    font-family: 'poppins-M';
+    src: local('Poppins-Medium'), url(./fonts/Poppins-Medium.ttf) format('truetype');
+  }
+  
+  
+  
+  /* ---------------------------- PESQUISA CIDADE ------------------------------------*/
+  
+  .container2{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    align-items: center;
+  }
+  
+  .fundo1 {
+    height: 396px;
+    width: 450px;
+    background:#ffff;
+    border-radius: 40px ;
+    box-shadow: 5px 5px 15px 0px #00000029;
+    border: none;
+    padding: 20px;
+  }
+  
+  .fundo2 {
+    margin-top: 50px;
+    height: 300px;
+    width: 420px;
+    background:none;
+    border-radius: 40px ;
+    box-shadow: 5px 5px 15px 0px #00000029;
+    border: none;
+    padding: 20px;
+  }
+  
+  .cidade {
+    width: 398px;
+    height: 43px;
+    background-color: #2940a43d;
+    border-radius: 30px 30px 30px;
+    box-shadow: 0px 3px 8px 0px #00000029 ;
+    text-align:center;
+    border: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 60px;
+  } 
+  
+   #nome{
+    font-size: 12px;
+    font-family: poppins-M;
+    color: black;
+  } 
+  
+  .icone2 {
+    width: 51px;
+    height: 51px;
+    border-radius: 15px 15px 15px 15px;
+    background-color: #2940A4;
+    border: none;
+    position: absolute;
+  }
+  
+  .input2{
+    background-color: #2940a400;
+    width: 376px;
+    /* margin-left: 20px; */
+    font-family: poppins-M;
+    font-size: 16px;
+    color: #2B2727;
+    border: none;
+  }
+  
+  .suggestion {
+    cursor: pointer;
+    font-family: poppins-M;
+    font-size: 16px;
+    font-family: poppins-M;
+    color: #2B2727;
+    margin-left: 20px;
+    text-align:left;
+    width: 300px;
+    padding-left: 60px; 
+    background-color: #FFFFFF;
+  }
+  
+  .suggestion:hover {
+     background-color: #2940a43d;
+  }
+  
+  
+  /* ---------------------------------- SCROLL ------------------------------- */
+  
+  #scroll {
+    background:#ffff;
+    border-radius: 40px;
+    overflow-y: auto;
+  }
+  
+  
+  /* ::-webkit-scrollbar {
+    width: 20px;
+  }
+  
+  
+  ::-webkit-scrollbar-track-piece {
+    background-color: #EEE;
+    border-left: 1px solid #CCC
+  }
+  
+  
+  ::-webkit-scrollbar-thumb:vertical,
+  ::-webkit-scrollbar-thumb:horizontal {
+    background-color: #BAC0C4
+  }
+  
+  
+  ::-webkit-scrollbar-thumb:vertical:hover,
+  ::-webkit-scrollbar-thumb:horizontal:hover {
+    background-color: linear-gradient(90deg, hsla(236, 96%, 72%, 1) 51%, hsla(202, 83%, 67%, 1) 100%);
+  } */
+  
+  
+  /* ---------------------------------- RESULTADO ------------------------------- */
+  
+  .resultado{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items:baseline;
+    position: relative;
+    
+  }
+  
+  .cancelar {
+    width: 43px;
+    height: 43px;
+    right: 0;
+    border-radius: 13px;
+    background-color: #800000;
+    border:none;
+    position: absolute;
+  }
+  
+  .cidade-p {
+    width: 380px;
+    height: 43px;
+    background-color: #FFFFFF;
+    color: #2B2727;
+    border-radius: 30px 30px 30px;
+    box-shadow: 0px 3px 8px 0px #00000029;
+    border: none;
+    justify-content: space-between;
+    align-items: center;
+    text-align:left;
+  }
+  
+  .nome2{
+    font-size: 16px;
+    font-family: poppins-M;
+    color: #2B2727;
+    margin-left: 20px;
+    text-align:left;
+  }
+  
+  @media screen and (max-width: 700px) {
+  
+    .titulo2 {
+      font-size: 12px;
+    }
+  
+    .icone-t{
+      width:80px;
+      height:80px;
+    } 
+  
+    .imagens {
+      margin-left: 20px;
+      margin-top: 50px;
+    }
+  
+    .titulo1 {
+      font-size: 19px;
+      letter-spacing: 0px;
+    }
+  
+    .texto {
+      display: flex;
+      flex-wrap: wrap-reverse;
+      justify-content: center;
+      flex-wrap:wrap-reverse;
+    }
+  
+    .texto2 {
+      margin-top: 30px;
+    }
+  
+    #bt_menu {
+      background-color: hsla(202, 83%, 67%, 1);
+      ;
+    } 
+  
+    .fundo1 {
+      width: 90%;
+    }
+  
+    .demanda {
+      width: 110%
+    }
+  
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+  
+     
+    
+  

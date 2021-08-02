@@ -116,30 +116,48 @@
     overflow-y: auto;
   }
   
-  
-  /* ::-webkit-scrollbar {
-    width: 20px;
+  /*---------------------------------- executar ---------------------------------*/
+
+  .executar {
+    width: 234px;
+    height: 43px;
+    background: linear-gradient(90deg, hsla(236, 96%, 72%, 1) 51%, hsla(202, 83%, 67%, 1) 100%);
+    border-radius: 30px 30px 30px;
+    color: #ffffff;
+    border: none;
+    font-size: 14px;
+    font-family: poppins-M;
+    cursor: pointer;
+    z-index: 1;
+    vertical-align:middle;
+    align-self: center;
+    text-decoration: none;
+    padding: 12px;
   }
   
-  
-  ::-webkit-scrollbar-track-piece {
-    background-color: #EEE;
-    border-left: 1px solid #CCC
+  .icone-E {
+    margin-right: 13px; 
+    vertical-align: bottom;
   }
   
-  
-  ::-webkit-scrollbar-thumb:vertical,
-  ::-webkit-scrollbar-thumb:horizontal {
-    background-color: #BAC0C4
+  .botoes {
+    background-color: #FFFFFF;
+    border: none;
+    color: white;
+    opacity: 1;
+    transition: 0.3s;
+    display: inline-block;
+    cursor: pointer;
+    align-self: center;
+    
   }
   
+  .botoes:hover {
+    cursor: pointer;
+    opacity: 0.8;
+  }
   
-  ::-webkit-scrollbar-thumb:vertical:hover,
-  ::-webkit-scrollbar-thumb:horizontal:hover {
-    background-color: linear-gradient(90deg, hsla(236, 96%, 72%, 1) 51%, hsla(202, 83%, 67%, 1) 100%);
-  } */
-  
-  
+
   /* ---------------------------------- RESULTADO ------------------------------- */
   
   .resultado{

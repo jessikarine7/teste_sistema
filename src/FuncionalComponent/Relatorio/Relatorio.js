@@ -1,13 +1,15 @@
 import React, { useEffect, useState } from 'react';
-import '../App.css';
 import axios from 'axios';
 import './Relatorio.css';
+// import '/Requisicoes/Relatorio/GET.js';
+
 
 export default function Relatorio() {
 
   const [cidades, setUsers]= useState([]);
   const [text, setText] = useState('');
   const [suggestions, setSuggestions] = useState([]);
+  // const [addPost, handleSubmit] = UseState([]);
 
   useEffect(() => {
 
@@ -27,10 +29,14 @@ export default function Relatorio() {
         .catch((error) => {
           console.log(error)
         })
-    }
-    loadUsers();
-  }, [])
 
+      }
+
+      loadUsers();
+    }, [])
+  
+  
+  // const addPost = data => axios.post("http://localhost:8000/api/v1/cidades/")
 
   const onSuggestHandler = (text) => {
     setText(text);
@@ -51,23 +57,6 @@ export default function Relatorio() {
     setSuggestions(filtro)
     setText(text)
   }
-
-
-  // handleClick{(
-
-  //   let clear = document.querySelector('suggestion input2');
-  //   let input = document.querySelector('input2');
-  //   clear.useState('click',() => {
-  //     input.forEach(input => input.value= '');
-  //   })
-  // )};
-
-  // let clear = document.querySelector('suggestion input2');
-  // let input = document.querySelector('input2');
-
-  // clear.addEventListener('click', () => {
-  //   input.forEach(input => input.value= '');
-  // });
 
 
   return (
@@ -113,7 +102,7 @@ export default function Relatorio() {
         </button>
       </div>
         
-      <div className='botoes'>
+      <div className='botoes' >
         <div className='executar' type='button'>
           <img className='icone-E' src="/img/EXECUTAR1.svg" />
           <span>EXECUTAR AGORA</span>

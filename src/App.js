@@ -1,8 +1,6 @@
 import React from 'react';
-// import Routes from './Routes.js';
-// import './Api/Api.js';
 import './App.css';
-import './component/Relatorio.js';
+import Relatorio from "./FuncionalComponent/Relatorio/Relatorio.js";
 
 export default function App() {
   

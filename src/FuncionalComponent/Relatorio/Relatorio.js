@@ -1,15 +1,13 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import './Relatorio.css';
-// import '/Requisicoes/Relatorio/GET.js';
-
 
 export default function Relatorio() {
 
   const [cidades, setUsers]= useState([]);
   const [text, setText] = useState('');
   const [suggestions, setSuggestions] = useState([]);
-  // const [addPost, handleSubmit] = UseState([]);
+
 
   useEffect(() => {
 
@@ -35,8 +33,7 @@ export default function Relatorio() {
       loadUsers();
     }, [])
   
-  
-  // const addPost = data => axios.post("http://localhost:8000/api/v1/cidades/")
+  //-------------- filtro do municipio uf -------------------------
 
   const onSuggestHandler = (text) => {
     setText(text);
@@ -49,7 +46,10 @@ export default function Relatorio() {
     if (text.length>0){
       filtro = cidades.filter(usr=>{
         const regex = new RegExp(`${text}`, "gi");
-        return usr.municipio_uf.match(regex)
+        return (
+          usr.municipio_uf.match(regex)
+          // usr.id_cod_ibge.match(regex)
+        )
       })
     }
 
@@ -58,6 +58,8 @@ export default function Relatorio() {
     setText(text)
   }
 
+
+  //-------------- COMEÇA JSX --------------------------------
 
   return (
     <div className='fundo1' id='scroll'>
@@ -90,7 +92,7 @@ export default function Relatorio() {
           <div  key={i} className="suggestion input2"
             onClick={()=>onSuggestHandler(suggestion.municipio_uf)}
           >{suggestion.municipio_uf} </div>
-          )}
+        )}
       </div>
 
       <div className='resultado'>
@@ -102,7 +104,7 @@ export default function Relatorio() {
         </button>
       </div>
         
-      <div className='botoes' >
+      <div className='botoes' onChange={e=>onChangeHandler(e.target.value)} value={text}>
         <div className='executar' type='button'>
           <img className='icone-E' src="/img/EXECUTAR1.svg" />
           <span>EXECUTAR AGORA</span>

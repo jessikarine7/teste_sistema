@@ -11,6 +11,8 @@ export default function Relatorio() {
 
   useEffect(() => {
 
+    // --------------------- GET CIDADES--------------------------
+
     const loadUsers = async () => {
   
       const USER_TOKEN = '8de13d32f0e5752b1e1ffdc2ef9347c614d1d82a'
@@ -31,9 +33,35 @@ export default function Relatorio() {
       }
 
       loadUsers();
-    }, [])
+    
+
+      // --------------------- POST CRIAR PEDIDO --------------------------
+    
+      const postPedidos = async () => {
+    
+        const USER_TOKEN = '8de13d32f0e5752b1e1ffdc2ef9347c614d1d82a'
+        const AuthStr = 'Token '.concat(USER_TOKEN)
+        const URL = 'http://localhost:8000/api/v1/pedidos/'
+            
+        axios
+          .post(URL,
+            { headers: { Authorization: AuthStr } })
+          .then(response => {
+            console.log(response.data)
+            setUsers(response.data)
+          })
+          .catch((error) => {
+            console.log(error)
+          })
+
+        }
+
+        postPedidos();
+      }, [])
+
   
-  //-------------- filtro do municipio uf -------------------------
+
+    //-------------- filtro do municipio uf -------------------------
 
   const onSuggestHandler = (text) => {
     setText(text);
@@ -46,10 +74,7 @@ export default function Relatorio() {
     if (text.length>0){
       filtro = cidades.filter(usr=>{
         const regex = new RegExp(`${text}`, "gi");
-        return (
-          usr.municipio_uf.match(regex)
-          // usr.id_cod_ibge.match(regex)
-        )
+        return usr.municipio_uf.match(regex)
       })
     }
 
@@ -104,7 +129,8 @@ export default function Relatorio() {
         </button>
       </div>
         
-      <div className='botoes' onChange={e=>onChangeHandler(e.target.value)} value={text}>
+      <div className='botoes'>
+        {text}
         <div className='executar' type='button'>
           <img className='icone-E' src="/img/EXECUTAR1.svg" />
           <span>EXECUTAR AGORA</span>

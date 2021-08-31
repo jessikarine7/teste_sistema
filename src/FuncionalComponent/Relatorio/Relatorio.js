@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import './Relatorio.css';
-// import {link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
+
 
 export default function Relatorio() {
 
@@ -38,7 +39,7 @@ export default function Relatorio() {
 
       // --------------------- POST CRIAR PEDIDO --------------------------
     
-       const postPedidos = async () => {
+      const postPedidos = async () => {
     
       const USER_TOKEN = '8de13d32f0e5752b1e1ffdc2ef9347c614d1d82a'
       const AuthStr = 'Token '.concat(USER_TOKEN)
@@ -84,39 +85,39 @@ export default function Relatorio() {
     //   setSuggestions(filtro)
     //   setText(text)
     // }
-
+    
   
     //-------------- filtro do municipio uf -------------------------
 
-  const onSuggestHandler = (text) => {
-    let filtro = []
+    const onSuggestHandler = (text) => {
+      let filtro = []
 
-    if (text.length>0){
-      filtro = cidades.filter(usr=>{
-        const regex = new RegExp(`${text}`, "gi");
-        return usr.municipio_uf.match(regex)
-      })
-    }
-    console.log('filtro', filtro)
-    setSuggestions(filtro)
-    setText(text);
-    setSuggestions([]);
-  }
-
-  const onChangeHandler = (text) => {
-    let filtro = []
-
-    if (text.length>0){
-      filtro = cidades.filter(usr=>{
-        const regex = new RegExp(`${text}`, "gi");
-        return usr.municipio_uf.match(regex)
-      })
+      if (text.length>0){
+        filtro = cidades.filter(usr=>{
+          const regex = new RegExp(`${text}`, "gi");
+          return usr.municipio_uf.match(regex)
+        })
+      }
+      console.log('filtro', filtro)
+      setSuggestions(filtro)
+      setText(text);
+      setSuggestions([]);
     }
 
-    console.log('filtro', filtro)
-    setSuggestions(filtro)
-    setText(text)
-  }
+    const onChangeHandler = (text) => {
+      let filtro = []
+
+      if (text.length>0){
+        filtro = cidades.filter(usr=>{
+          const regex = new RegExp(`${text}`, "gi");
+          return usr.municipio_uf.match(regex)
+        })
+      }
+
+      console.log('filtro', filtro)
+      setSuggestions(filtro)
+      setText(text)
+    }
 
 
   //-------------- COMEÇA JSX --------------------------------

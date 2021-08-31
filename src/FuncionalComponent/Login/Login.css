@@ -1,0 +1,378 @@
+/* ------------------------------------- FONTES -------------------------------*/
+
+@font-face {
+  font-family: 'poppins-B';
+  src: local('Poppins-Bold'), url(./fonts/Poppins-Bold.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'poppins-M';
+  src: local('Poppins-Medium'), url(./fonts/Poppins-Medium.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'poppins-L';
+  src: local('Poppins-Light'), url(./fonts/Poppins-Light.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'poppins-SB';
+  src: local('Poppins-SemiBold'), url(./fonts/Poppins-SemiBold.ttf) format('truetype');
+}
+
+/* ------------------------------------- FUNDO E ÍCONES -------------------------------*/
+
+.fundo {
+  top: 0px;
+  left: 0px;
+  width: 1920px;
+  height: 1080px;
+  background: transparent linear-gradient(236deg, #5EFCE8 0%, #736EFE 100%) 0% 0% no-repeat padding-box;
+  opacity: 1;
+}
+
+.poligono {
+  top: 54px;
+  left: 464px;
+  width: 992px;
+  height: 999px;
+  
+  color: #3F7DC5;
+  position: absolute;
+}
+
+.circulo-1 {
+  top: 445px;
+  left: 772px;
+  width: 58px;
+  height: 58px;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  opacity: 1;
+  position: absolute;
+  border-radius: 30px 30px 30px;
+  border: none;
+}
+
+.arroba {
+  top: 454px;
+  left: 781px;
+  width: 41px;
+  height: 41px;
+  position: absolute;
+  border: none;
+  opacity: 1;
+}
+
+.circulo-2 {
+  top: 534px;
+  left: 1091px;
+  width: 58px;
+  height: 59px;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  opacity: 1;
+  border-radius: 30px 30px 30px;
+  position: absolute;
+  border: none;
+}
+
+.cadeado {
+  top: 546px;
+  left: 1099px;
+  width: 41px;
+  height: 35px;
+  opacity: 1;
+  position: absolute;
+}
+
+/* ------------------------------------- TÍTULO -------------------------------*/
+
+.titulo {
+  top: 338px;
+  top: 338px;
+  left: 874px;
+  width: 174px;
+  height: 32px;
+  text-align: center;
+  font-family: poppins-B;
+  letter-spacing: 0.23px;
+  color: #736EFE;
+  opacity: 1;
+  position: absolute;
+  font-size: 23px;
+  color: #FFFFFF;
+  letter-spacing: 0.23px;
+}
+
+/* ------------------------------------- EMAIL -------------------------------*/
+
+.email {
+  top: 449px;
+  left: 772px;
+  width: 377px;
+  height: 52px;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  border-radius: 26px;
+  opacity: 0.4;
+  border: none;
+  position: absolute;
+  cursor: pointer;
+}
+
+
+/* ------------------------------------------------- SENHA -------------------------------------------*/
+
+.senha {
+  top: 539px;
+  left: 772px;
+  width: 377px;
+  height: 51px;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  border-radius: 26px;
+  opacity: 0.4;
+  position: absolute;
+  border: none;
+  cursor: pointer;
+}
+
+
+/* --------------------------------------- INPUT ---------------------------------------- */
+
+.form {
+  width: 50%;
+  position: absolute;
+  height: 50px;
+  
+}
+
+.form .email-I {
+  top: -618px;
+  left: 842px;
+  width: 280px;
+  height: 35px;
+  color: #2940A4;
+  padding-top: 20px;
+  border: none;
+  position: absolute;
+  background: none;
+}
+
+.form .label-email {
+  top: -618px;
+  left: 842px;
+  width: 280px;
+  height: 35px;
+  font-size: 17px;
+  color: #2940A4;
+  opacity: 0.7;
+  letter-spacing: 0.5PX;
+  font-family: poppins-SB;
+  border: none;
+  position: absolute;
+  background: none;
+  cursor: pointer;
+  position: absolute;
+  bottom: 0px;
+  pointer-events: none;
+}
+
+.form .password {
+  top: -530px;
+  left: 794px;
+  width: 280px;
+  height: 35px;
+  color: #2940A4;
+  padding-top: 20px;
+  border: none;
+  position: absolute;
+  background: none;
+}
+
+.form .label-password{
+  top: -530px;
+  left: 794px;
+  width: 280px;
+  height: 35px;
+  font-size: 17px;
+  color: #2940A4;
+  opacity: 0.7;
+  letter-spacing: 0.5PX;
+  font-family: poppins-SB;
+  border: none;
+  position: absolute;
+  background: none;
+  cursor: pointer;
+  position: absolute;
+  bottom: 0px;
+  pointer-events: none;
+}
+
+.form .label-email::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  transform: translateX(-100%);
+}
+
+.content-email{
+  position: absolute;
+  bottom: 5px;
+  left: 0px;
+  transition: all 0.3 ease;
+}
+
+.form .email-I:focus + .label-email {
+  transform: translateY(-45%);
+  font-size: 14px;
+}
+
+
+.form .label-password::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  transform: translateX(-100%);
+}
+
+.content-password {
+  position: absolute;
+  bottom: 5px;
+  left: 0px;
+  transition: all 0.3 ease;
+}
+
+.form .password:focus + .label-password {
+  transform: translateY(-45%);
+  font-size: 14px;
+}
+
+
+
+/* ------------------------------------- ESQUECEU A SENHA ----------------------------------*/
+
+.esqueceu {
+  top: 593px;
+  left: 797px;
+  width: 114px;
+  height: 16px;
+  color: #FFFFFF;
+  opacity: 1;
+  position: absolute;
+  border: none;
+  background: none;
+  
+}
+
+.esqueceu-N {
+  top: 593px;
+  left: 797px;
+  width: 120px;
+  height: 16px;
+  color: #FFFFFF;
+  font-family: poppins-M;
+  font-size: 11px;
+  letter-spacing: 0.11px;
+  position: absolute;
+}
+
+/* -------------- ANIMAÇÃO DE ESQUECEU A SENHA ---------------*/
+
+.esqueceu-N:hover {
+  cursor: pointer;
+  font-family: poppins-SB;
+  transition: .3s;
+}
+
+/* --------------------------------------------- LOGIN -------------------------------------*/
+
+.login {
+  top: 647px;
+  left: 772px;
+  width: 377px;
+  height: 51px;
+  background: #FFFFFF;
+  border-radius: 26px;
+  opacity: 1;
+  position: absolute;
+  border: none;
+}
+
+.login-N {
+  top: 656px;
+  left: 924px;
+  width: 72px;
+  height: 32px;
+  font-family: poppins-B;
+  color: #2940A4;
+  font-size: 23px;
+  position: absolute;
+  cursor: pointer;
+}
+
+/* ------------------ ANIMAÇÃO BOTÃO LOGIN -----------------*/
+
+.login {
+  background-color: #FFFFFF;
+  border: none;
+  color: white;
+  opacity: 1;
+  transition: 0.3s;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.login:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+/* ------------------------------------- SOLICITAR ACESSO -------------------------------*/
+
+.solicitar {
+  top: 717px;
+  left: 993px;
+  width: 156px;
+  height: 26px;
+  border: 2px solid #FFFFFF;
+  border-radius: 26px;
+  opacity: 1;
+  position: absolute;
+  background: none;
+}
+
+.solicitar-N{
+  top: 722px;
+  left: 1017px;
+  width: 110px;
+  height: 16px;
+  letter-spacing: 0.11px;
+  font-size: 11px;
+  font-family: poppins-M;
+  color: #FFFFFF;
+  position: absolute;
+  cursor:pointer;
+}
+
+/* -------------------- ANIMAÇÃO SOLICITAR ACESSO -----------------------*/
+
+.solicitar-N:hover {
+  font-family: poppins-SB;
+  transition: 0.3s;
+  cursor:pointer;
+}
+
+/*---------------------- INPUTS----------------------------*/
+
+textarea:focus, input:focus, select:focus {
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+} 
+
+input{
+  box-shadow: 0 0 0 0;
+  border: 0 none;
+  outline: 0;
+}

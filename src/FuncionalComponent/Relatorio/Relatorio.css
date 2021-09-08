@@ -139,6 +139,7 @@
     align-self: center;
     text-decoration: none;
     padding: 12px;
+
   }
   
   .icone-E {
@@ -155,6 +156,8 @@
     display: inline-block;
     cursor: pointer;
     align-self: center;
+    margin: 50px;
+    flex-direction: row;
     
   }
   

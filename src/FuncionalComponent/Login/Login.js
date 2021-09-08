@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
-import { toast } from 'react-toastify';
+// import { toast } from 'react-toastify';
 import { Link } from 'react-router-dom';
-import { isEmail } from 'validator';
+// import { isEmail } from 'validator';
 // import styled from "styled-component";
 // import { Container } from './styled';
 // import { Form } from './styled';
@@ -18,14 +18,14 @@ export default function Login() {
   
 
 
-    const handleSubimit = value => console.log(value) 
-      const validacao = yup.object().shape({
-        email: yup.string().email().required(),
-        password: yup.string().min(6).required()
-      })
-    console.log(validacao);
-    setEmail(email);
-    setPassword(password);
+    // const handleSubimit = value => console.log(value) 
+    //   const validacao = yup.object().shape({
+    //     email: yup.string().email().required(),
+    //     password: yup.string().min(6).required()
+    //   })
+    // console.log(validacao);
+    // setEmail(email);
+    // setPassword(password);
     
 
 
@@ -67,11 +67,11 @@ export default function Login() {
           <h2 className='fundo'></h2>
         </div>
         
-        <form onChange={handleSubimit}>
+        <form >
             <span className='content-email,label-email'>Email</span>
           <div id="email">
             <button className='email'>
-              <input className='email-I' type="email" name='email' required value={email} onChange={e => setEmail(e.target.value)} placeholder="seu e-mail"/>
+              <input className='email-I' type="email" name='email' required placeholder="seu e-mail"/>
             </button>    
             <div>
               <button className='circulo-1'></button>

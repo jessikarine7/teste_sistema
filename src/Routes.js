@@ -3,6 +3,7 @@ import {BrowserRouter, Switch, Route} from 'react-router-dom';
 
 import Login from './FuncionalComponent/Login/Login';
 import Relatorio from './FuncionalComponent/Relatorio/Relatorio';
+import Pedidos from './FuncionalComponent/Pedidos/Pedidos';
 
 
 export default function Routes(){
@@ -12,7 +13,7 @@ export default function Routes(){
         <Route path="/" exact component={Login}/>
         <Route path="/Login" component={Login}/>
         <Route path={"/Relatorio"} component={Relatorio}/>
-        <Route path={"/Relatorio2"} component={Relatorio}/>
+        <Route path={"/Pedidos"} component={Pedidos}/>
       </Switch>
     </BrowserRouter>
   );

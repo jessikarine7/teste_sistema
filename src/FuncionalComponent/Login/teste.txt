@@ -1,0 +1,10 @@
+axios
+  .get(URL,
+    { headers: { Authorization: AuthStr } })
+  .then(response => {
+    console.log(response.data)
+    setCidades(response.data)
+  })
+  .catch((error) => {
+    console.log(error)
+  })

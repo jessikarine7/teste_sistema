@@ -1,8 +1,0 @@
-axios
-        .get(URL,
-          { headers: { Authorization: AuthStr } })
-        .then(resp => console.log(resp))
-        })
-        .catch((error) => {
-          console.log(error)
-        })

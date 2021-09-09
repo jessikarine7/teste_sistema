@@ -14,7 +14,7 @@ export default function Routes(){
         <Route path="/" exact component={Login}/>
         <Route path="/Login" component={Login}/>
         <PrivateRoute path={"/Relatorio"} component={Relatorio}/>
-        <Route path={"/Pedidos"} component={Pedidos}/>
+        <PrivateRoute path={"/Pedidos"} component={Pedidos}/>
       </Switch>
     </BrowserRouter>
   );

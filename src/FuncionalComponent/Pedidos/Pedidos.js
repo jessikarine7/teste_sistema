@@ -4,7 +4,6 @@ import './Pedidos.css';
 import { Link } from 'react-router-dom';
 
 
-
 const acessoToken = '8de13d32f0e5752b1e1ffdc2ef9347c614d1d82a'
 const URL = 'http://localhost:8000/api/v1/pedidos/';
 
@@ -14,7 +13,6 @@ const authAxios = axios.create ({
     Authorization: `Bearer ${acessoToken}`
   }
 })
-
 
 
 export default function Pedidos() {

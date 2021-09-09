@@ -1,6 +1,6 @@
 /* ------------------------------------- FONTES -------------------------------*/
 
-@font-face {
+/* @font-face {
   font-family: 'poppins-B';
   src: local('Poppins-Bold'), url(./fonts/Poppins-Bold.ttf) format('truetype');
 }
@@ -18,11 +18,11 @@
 @font-face {
   font-family: 'poppins-SB';
   src: local('Poppins-SemiBold'), url(./fonts/Poppins-SemiBold.ttf) format('truetype');
-}
+} */
 
 /* ------------------------------------- FUNDO E ÍCONES -------------------------------*/
 
-.fundo {
+/* .fundo {
   top: 0px;
   left: 0px;
   width: 1920px;
@@ -86,7 +86,7 @@
 
 /* ------------------------------------- TÍTULO -------------------------------*/
 
-.titulo {
+/* .titulo {
   top: 338px;
   top: 338px;
   left: 874px;
@@ -104,7 +104,7 @@
 }
 
 /* ------------------------------------- EMAIL -------------------------------*/
-
+/* 
 .email {
   top: 449px;
   left: 772px;
@@ -117,11 +117,11 @@
   position: absolute;
   cursor: pointer;
 }
-
+ */
 
 /* ------------------------------------------------- SENHA -------------------------------------------*/
 
-.senha {
+/* .senha {
   top: 539px;
   left: 772px;
   width: 377px;
@@ -132,11 +132,11 @@
   position: absolute;
   border: none;
   cursor: pointer;
-}
+} */
 
 
 /* --------------------------------------- INPUT ---------------------------------------- */
-
+/* 
 .form {
   width: 50%;
   position: absolute;
@@ -245,13 +245,13 @@
 .form .password:focus + .label-password {
   transform: translateY(-45%);
   font-size: 14px;
-}
+} */
 
 
 
 /* ------------------------------------- ESQUECEU A SENHA ----------------------------------*/
 
-.esqueceu {
+/* .esqueceu {
   top: 593px;
   left: 797px;
   width: 114px;
@@ -274,18 +274,18 @@
   font-size: 11px;
   letter-spacing: 0.11px;
   position: absolute;
-}
+} */
 
 /* -------------- ANIMAÇÃO DE ESQUECEU A SENHA ---------------*/
-
+/* 
 .esqueceu-N:hover {
   cursor: pointer;
   font-family: poppins-SB;
   transition: .3s;
-}
+} */
 
 /* --------------------------------------------- LOGIN -------------------------------------*/
-
+/* 
 .login {
   top: 647px;
   left: 772px;
@@ -311,7 +311,7 @@
 }
 
 /* ------------------ ANIMAÇÃO BOTÃO LOGIN -----------------*/
-
+/* 
 .login {
   background-color: #FFFFFF;
   border: none;
@@ -326,10 +326,10 @@
 .login:hover {
   cursor: pointer;
   opacity: 0.8;
-}
+} */
 
 /* ------------------------------------- SOLICITAR ACESSO -------------------------------*/
-
+/* 
 .solicitar {
   top: 717px;
   left: 993px;
@@ -353,18 +353,18 @@
   color: #FFFFFF;
   position: absolute;
   cursor:pointer;
-}
+} */
 
 /* -------------------- ANIMAÇÃO SOLICITAR ACESSO -----------------------*/
 
-.solicitar-N:hover {
+/* .solicitar-N:hover {
   font-family: poppins-SB;
   transition: 0.3s;
   cursor:pointer;
-}
+} */
 
 /*---------------------- INPUTS----------------------------*/
-
+/* 
 textarea:focus, input:focus, select:focus {
     box-shadow: 0 0 0 0;
     border: 0 none;
@@ -375,4 +375,4 @@ input{
   box-shadow: 0 0 0 0;
   border: 0 none;
   outline: 0;
-} 
+}   */

@@ -34,32 +34,32 @@
   
         }
   
-        loadUsers();
+      loadUsers();
       
   
-        // --------------------- POST CRIAR PEDIDO --------------------------
+      // --------------------- POST CRIAR PEDIDO --------------------------
+    
+      const postPedidos = async () => {
+    
+      const USER_TOKEN = '8de13d32f0e5752b1e1ffdc2ef9347c614d1d82a'
+      const AuthStr = 'Token '.concat(USER_TOKEN)
+      const URL = 'http://localhost:8000/api/v1/pedidos/'
+          
+      axios
+        .post(URL,
+          { headers: { Authorization: AuthStr } })
+        .then(response => {
+          console.log(response.data)
+          setUsers(response.data)
+        })
+        .catch((error) => {
+          console.log(error.response)
+        })
+
+      }
+
+      postPedidos();
       
-        const postPedidos = async () => {
-      
-        const USER_TOKEN = '8de13d32f0e5752b1e1ffdc2ef9347c614d1d82a'
-        const AuthStr = 'Token '.concat(USER_TOKEN)
-        const URL = 'http://localhost:8000/api/v1/pedidos/'
-            
-        axios
-          .post(URL,
-            { headers: { Authorization: AuthStr } })
-          .then(response => {
-            console.log(response.data)
-            setUsers(response.data)
-          })
-          .catch((error) => {
-            console.log(error)
-          })
-  
-        }
-  
-        postPedidos();
-  
       }, [])
   
   
